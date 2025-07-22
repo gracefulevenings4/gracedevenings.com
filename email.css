@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.email-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.email-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.email-card {
+  background-color: #fde4ef;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.email-card h2 {
+  color: #c2185b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.email-card a {
+  display: inline-block;
+  color: #e91e63;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-card a:hover {
+  text-decoration: underline;
+  color: #ad1457;
+}
+
+.back-link {
+  margin-top: 40px;
+}
+
+.back-link a {
+  color: #e6005c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

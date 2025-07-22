@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graceful Evenings - Welcome</title>
+  <link rel="stylesheet" href="home.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #e91e63;
+      font-size: 16px;
+    }
+
+    .navbar ul li a:hover {
+      color: #ad1457;
+    }
+
+    .container {
+      margin-top: 100px; /* space for navbar */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#payment">Rates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+  <div class="container">
+    <h1>Are You Tired of Lonely Evenings?</h1>
+    <p>In today’s fast-paced world, it’s easy to find yourself surrounded by people yet feeling deeply alone...</p>
+    <p><strong>Graceful Evenings</strong> understands that meaningful connection isn’t just a luxury — it’s a vital part of feeling truly alive...</p>
+    <p>Imagine attending a gala, enjoying a quiet dinner, or simply unwinding after a long day...</p>
+
+    <h2>Why Choose Graceful Evenings?</h2>
+    <ul>
+      <li><strong>Discreet and Professional:</strong> Your privacy is our priority...</li>
+      <li><strong>Tailored Experiences:</strong> From social events to private dinners...</li>
+      <li><strong>Elegant and Genuine:</strong> Every encounter is designed to be memorable...</li>
+    </ul>
+
+    <p class="final">Loneliness doesn’t have to be your story...</p>
+    <p class="cta">Ready to embrace a new chapter of companionship? <strong>Reach out to us today</strong>...</p>
+
+    <!-- 💐 What We Provide Section -->
+    <h2 id="services" style="color: pink; font-size: 32px; margin-top: 60px;">💐 What We Provide 💐</h2>
+    <p style="font-size: 18px; line-height: 1.6; text-align: center;">
+      At <strong>Graceful Evenings</strong>, we specialize in delivering companionship that is as elegant as it is heartfelt...
+    </p>
+
+    <ul style="list-style-type: '🌸 '; font-size: 18px; line-height: 1.8;">
+      <li><strong>Feminine Companionship:</strong> Stylish and charming ladies...</li>
+      <li><strong>Transgender Elegance (Special Bonus):</strong> Confident and graceful companions...</li>
+      <li><strong>Event & Dinner Companions:</strong> Perfect for any occasion...</li>
+      <li><strong>Confidential Relaxation:</strong> Judgment-free space for conversation and comfort...</li>
+      <li><strong>Discreet & Safe:</strong> Your privacy is protected at all times...</li>
+    </ul>
+
+    <!-- 💳 Payment & Rates Section -->
+    <section id="payment" class="payment-section">
+      <h2 class="payment-title">💳 Payment & Rates</h2>
+      <p>At <strong>Graceful Evenings</strong>, we believe that true companionship should be accessible...</p>
+      <p>Whether you're seeking a calm night in or a tailored experience, we’re happy to personalize...</p>
+      <p><em>All rates and payment details will be shared privately on a secure platform upon request.</em></p>
+      <button><a href="#contact" class="quote-btn">Request Private Quote</a> 
+      </button>
+    </section>
+  </div>
+
+  <!-- Smooth scroll fix for external link load -->
+  <script>
+    window.addEventListener('load', () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      }
+    });
+  </script>
+  <section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>If you’d like to reach out for bookings or inquiries, we’d love to hear from you.</p>
+
+
+  <div class="alt-contact">
+  <p>Prefer email? You can reach us directly for personalized inquiries or bookings.</p>
+  <div class="email-buttons">
+    <a href="email.html" class="email-link">📩 Booking Email</a>
+    <a href="email.html" class="email-link">📬 Support Email</a>
+    <a href="email.html" class="email-link">📥 General Contact</a>
+  </div>
+</div>
+</section>
+</body>
+</html>

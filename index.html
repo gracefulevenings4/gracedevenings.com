@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graceful Evenings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="overlay">
+    <div class="content">
+      <h1>🌸❤️ <strong>Graceful Evenings</strong> ❤️🌸</h1>
+      <p class="motto">"Elevate your evenings with class"</p>
+
+      <form class="age-check" onsubmit="return checkAge(event)">
+        <label>Are you 18 or older?</label><br><br>
+        <input type="radio" name="age" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="age" id="no" value="no">
+        <label for="no">No</label><br><br>
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function checkAge(event) {
+      event.preventDefault();
+      const yes = document.getElementById("yes").checked;
+      const no = document.getElementById("no").checked;
+
+      if (yes) {
+        // Redirect to another page (e.g., home.html)
+        window.location.href = "home.html";
+      } else if (no) {
+        alert("Sorry, you must be 18 or older to enter.");
+      } else {
+        alert("Please select an option to continue.");
+      }
+    }
+  </script>
+  <p class="terms-note">
+  By clicking Continue, you agree to our 
+  <a href="terms.html">Terms and conditions</a>.
+</p>
+</body>
+</html>
